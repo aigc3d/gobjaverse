@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>High-Quality Rendering Dataset of Objaverse</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">G-buffer Objaverse: High-Quality Rendering Dataset of Objaverse</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="mailto:eric.xc@alibaba-inc.com" target="_blank">Chao Xu</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="mailto:yuandong15@fudan.edu.cn" target="_blank">Yuan Dong</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="mailto:muyuan.zq@alibaba-inc.com" target="_blank">Qi Zuo</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="mailto:miracle.zjf@alibaba-inc.com" target="_blank">Junfei Zhang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="mailto:doris.yxd@alibaba-inc.com" target="_blank">Xiaodan Ye</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="mailto:rengui.gwb@alibaba-inc.com" target="_blank">Wenbo Geng</a><sup>3</sup>,</span>
+                <span class="author-block">
+                <a href="mailto:yuxiangzhang.zyx@alibaba-inc.com" target="_blank">Yuxiang Zhang</a><sup>3</sup>,</span>
+                <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?user=aJPO514AAAAJ&hl=zh-CN&oi=ao" target="_blank">Xiaodong Gu</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="https://lingtengqiu.github.io/" target="_blank">Lingteng Qiu</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="mailto:bushe.zzy@alibaba-inc.com" target="_blank">Zhengyi Zhao</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="mailto:ranqing.rq@alibaba-inc.com" target="_blank">Qing Ran</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="mailto:jiayi.jjy@alibaba-inc.com" target="_blank">Jiayi Jiang</a>,</span>
+                <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=GHOQKCwAAAAJ&hl=zh-CN&oi=ao" target="_blank">Zilong Dong</a>,</span>
+                <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=FJwtMf0AAAAJ&hl=zh-CN" target="_blank">Liefeng Bo</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institute for Intelligent Computing, Alibaba Group</span>
+                    <span class="eql-cntrb"><small><br><sup>1</sup>TIDE Rendering &nbsp</small></span>
+                    <span class="eql-cntrb" style="white-space: nowrap;"><small><sup>2</sup>3D Object Annotation and Generation&nbsp</small></span>
+                    <span class="eql-cntrb"><small><sup>3</sup>Simulation Platform</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+<!--                         &lt;!&ndash; Arxiv PDF link &ndash;&gt;-->
+<!--                      <span class="link-block">-->
+<!--                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"-->
+<!--                        class="external-link button is-normal is-rounded is-dark">-->
+<!--                        <span class="icon">-->
+<!--                          <i class="fas fa-file-pdf"></i>-->
+<!--                        </span>-->
+<!--                        <span>Paper</span>-->
+<!--                      </a>-->
+<!--                    </span>-->
+
+                    <!-- Video link -->
+                    <span class="link-block">
+                      <a href="https://www.youtube.com/watch?v=m8xYTNbguLQ" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Youtube</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/3DAIGC/Objaverse-HQ-Rendering" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-desktop"></i>
+                    </span>
+                    <span>Download</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+<!--                <span class="link-block">-->
+<!--                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"-->
+<!--                  class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                    <i class="ai ai-arxiv"></i>-->
+<!--                  </span>-->
+<!--                  <span>arXiv</span>-->
+<!--                </a>-->
+<!--              </span>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/teaser.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Samples of the dataset. From top to bottom, there are the RGB, Albedo, Normal and Depth images.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            G-buffer Objaverse is rendered using the <a href="https://developer.aliyun.com/article/784784?spm=a2c6h.14164896.0.0.d7c247c5q1Pb9G&scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@784784._.ID_784784-RL_tidejs-LOC_search~UND~community~UND~item-OR_ser-V_3-P0_0" target="_blank" style="color: rgb(47, 141, 255);">TIDE </a> renderer on Objaverse with A10 for about 2000 GPU hours, yielding 30,000,000 images of Albedo, RGB, Depth, and Normal map. We proposed a rendering framework for high quality and high speed dataset rendering. The framework is a hybrid of rasterization and path tracing, the first ray-scene intersection is obtained by hardware rasterization and accurate indirect lighting by full hardware path tracing. Additionally, we using adaptive sampling, denoiser and path-guiding to further speed up the rendering time. In this rendering framework, we render 38 views of a centered object, including 24 views at elevation range from 5° to 30°, rotation = {r × 15° | r ∈ [0, 23]}, and 12 views at elevation from -5° to 5°, rotation = {r × 30° | r ∈ [0, 11]}, and 2 views for top and bottom respectively. In addition, we mannuly split the subset of the objaverse dataset into 10 general categories including Human-Shape (41559), Animals (28882), Daily-Used (220227), Furnitures (19285), Buildings&&Outdoor (116548), Transportations (20075), Plants (7195), Food (5314), Electronics (13252) and Poor-quality (107005).
+          </p>
+          <img src="static/images/intro.png" alt="MY ALT TEXT"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Youtube video -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/m8xYTNbguLQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Application</h2>
+      <div class="item">
+        <!-- Your image here -->
+<!--        <img src="static/images/application.png" alt="MY ALT TEXT"/>-->
+        <h2 class="content has-text-justified">
+          We have used G-buffer Objaverse for training MultiView Normal-Depth diffusion model (<a href="https://github.com/modelscope/normal-depth-diffusion/" style="color: rgb(47, 141, 255);" target="_blank">ND-MV</a>) and depth-condition MultiView Albedo diffusion model (<a href="https://github.com/modelscope/normal-depth-diffusion/" style="color: rgb(47, 141, 255);" target="_blank">Albedo-MV</a>), which are employed for 3D object generation through score-distillation sampling (SDS) in <a href="https://aigc3d.github.io/richdreamer/" style="color: rgb(47, 141, 255);" target="_blank">RichDreamer </a> .
+       </h2>
+      <img src="static/images/application.png" alt="MY ALT TEXT"/>
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+<pre><code>@article{qiu2023richdreamer,
+    title={RichDreamer: A Generalizable Normal-Depth Diffusion Model for Detail Richness in Text-to-3D},
+    author={Lingteng Qiu and Guanying Chen and Xiaodong Gu and Qi zuo and Mutian Xu and Yushuang Wu and Weihao Yuan and Zilong Dong and Liefeng Bo and Xiaoguang Han},
+    year={2023},
+    journal = {arXiv preprint arXiv:2311.16918}
+}
+    </code></pre>
+    <pre><code>@article{objaverse,
+    title={Objaverse: A Universe of Annotated 3D Objects},
+    author={Matt Deitke and Dustin Schwenk and Jordi Salvador and Luca Weihs and
+            Oscar Michel and Eli VanderBilt and Ludwig Schmidt and
+            Kiana Ehsani and Aniruddha Kembhavi and Ali Farhadi},
+    journal={arXiv preprint arXiv:2212.08051},
+    year={2022}
+}
+    </code></pre>
+  </div>
+</section>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
