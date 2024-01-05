@@ -86,7 +86,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">G-buffer Objaverse: High-Quality Rendering Dataset of Objaverse</h1>
+            <h1 class="title is-1 publication-title">GObjaverse: High-Quality Rendering Dataset of Objaverse</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -142,7 +142,7 @@
 
                     <!-- Video link -->
                     <span class="link-block">
-                      <a href="https://www.youtube.com/watch?v=m8xYTNbguLQ" target="_blank"
+                      <a href="https://www.youtube.com/watch?v=2uSplFflZFs" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fab fa-youtube"></i>
@@ -153,7 +153,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://huggingface.co/datasets/3DAIGC/Objaverse-HQ-Rendering" target="_blank"
+                    <a href="https://github.com/aigc3d/gobjaverse" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-desktop"></i>
@@ -206,7 +206,7 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            G-buffer Objaverse is rendered using the <a href="https://developer.aliyun.com/article/784784?spm=a2c6h.14164896.0.0.d7c247c5q1Pb9G&scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@784784._.ID_784784-RL_tidejs-LOC_search~UND~community~UND~item-OR_ser-V_3-P0_0" target="_blank" style="color: rgb(47, 141, 255);">TIDE </a> renderer on Objaverse with A10 for about 2000 GPU hours, yielding 30,000,000 images of Albedo, RGB, Depth, and Normal map. We proposed a rendering framework for high quality and high speed dataset rendering. The framework is a hybrid of rasterization and path tracing, the first ray-scene intersection is obtained by hardware rasterization and accurate indirect lighting by full hardware path tracing. Additionally, we using adaptive sampling, denoiser and path-guiding to further speed up the rendering time. In this rendering framework, we render 38 views of a centered object, including 24 views at elevation range from 5° to 30°, rotation = {r × 15° | r ∈ [0, 23]}, and 12 views at elevation from -5° to 5°, rotation = {r × 30° | r ∈ [0, 11]}, and 2 views for top and bottom respectively. In addition, we mannuly split the subset of the objaverse dataset into 10 general categories including Human-Shape (41559), Animals (28882), Daily-Used (220227), Furnitures (19285), Buildings&&Outdoor (116548), Transportations (20075), Plants (7195), Food (5314), Electronics (13252) and Poor-quality (107005).
+            G-buffer Objaverse (GObjaverse) is rendered using the <a href="https://developer.aliyun.com/article/784784?spm=a2c6h.14164896.0.0.d7c247c5q1Pb9G&scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@784784._.ID_784784-RL_tidejs-LOC_search~UND~community~UND~item-OR_ser-V_3-P0_0" target="_blank" style="color: rgb(47, 141, 255);">TIDE </a> renderer on Objaverse with A10 for about 2000 GPU hours, yielding 30,000,000 images of Albedo, RGB, Depth, and Normal map. We proposed a rendering framework for high quality and high speed dataset rendering. The framework is a hybrid of rasterization and path tracing, the first ray-scene intersection is obtained by hardware rasterization and accurate indirect lighting by full hardware path tracing. Additionally, we using adaptive sampling, denoiser and path-guiding to further speed up the rendering time. In this rendering framework, we render 38 views of a centered object, including 24 views at elevation range from 5° to 30°, rotation = {r × 15° | r ∈ [0, 23]}, and 12 views at elevation from -5° to 5°, rotation = {r × 30° | r ∈ [0, 11]}, and 2 views for top and bottom respectively. In addition, we mannuly split the subset of the objaverse dataset into 10 general categories including Human-Shape (41,557), Animals (28,882), Daily-Used (220,222), Furnitures (19,284), Buildings&&Outdoor (116,545), Transportations (20,075), Plants (7,195), Food (5,314), Electronics (13,252) and Poor-quality (107,001).
           </p>
           <img src="static/images/intro.png" alt="MY ALT TEXT"/>
         </div>
@@ -227,7 +227,7 @@
 
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/m8xYTNbguLQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/2uSplFflZFs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -246,7 +246,7 @@
         <!-- Your image here -->
 <!--        <img src="static/images/application.png" alt="MY ALT TEXT"/>-->
         <h2 class="content has-text-justified">
-          We have used G-buffer Objaverse for training MultiView Normal-Depth diffusion model (<a href="https://github.com/modelscope/normal-depth-diffusion/" style="color: rgb(47, 141, 255);" target="_blank">ND-MV</a>) and depth-condition MultiView Albedo diffusion model (<a href="https://github.com/modelscope/normal-depth-diffusion/" style="color: rgb(47, 141, 255);" target="_blank">Albedo-MV</a>), which are employed for 3D object generation through score-distillation sampling (SDS) in <a href="https://aigc3d.github.io/richdreamer/" style="color: rgb(47, 141, 255);" target="_blank">RichDreamer </a> .
+          We have used GObjaverse for training MultiView Normal-Depth diffusion model (<a href="https://github.com/modelscope/normal-depth-diffusion/" style="color: rgb(47, 141, 255);" target="_blank">ND-MV</a>) and depth-condition MultiView Albedo diffusion model (<a href="https://github.com/modelscope/normal-depth-diffusion/" style="color: rgb(47, 141, 255);" target="_blank">Albedo-MV</a>), which are employed for 3D object generation through score-distillation sampling (SDS) in <a href="https://aigc3d.github.io/richdreamer/" style="color: rgb(47, 141, 255);" target="_blank">RichDreamer </a> .
        </h2>
       <img src="static/images/application.png" alt="MY ALT TEXT"/>
      </div>
