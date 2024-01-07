@@ -19,7 +19,7 @@ G-buffer Objaverse: High-Quality Rendering Dataset of Objaverse.
 [Zilong Dong](https://scholar.google.com/citations?user=GHOQKCwAAAAJ&hl=zh-CN&oi=ao),
 [Liefeng Bo](https://scholar.google.com/citations?user=FJwtMf0AAAAJ&hl=zh-CN)
 
-## [Project page](https://aigc3d.github.io/gobjaverse/) | [YouTube](https://www.youtube.com/watch?v=2uSplFflZFs) | [RichDreamer](https://lingtengqiu.github.io/RichDreamer/) | [ND-Diffusion Model](https://github.com/modelscope/normal-depth-diffusion)
+## [Project page](https://aigc3d.github.io/gobjaverse/) | [YouTube](https://www.youtube.com/watch?v=PWweS-EPbJo) | [RichDreamer](https://lingtengqiu.github.io/RichDreamer/) | [ND-Diffusion Model](https://github.com/modelscope/normal-depth-diffusion)
 
 
 ## News
