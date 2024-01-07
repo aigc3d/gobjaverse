@@ -24,7 +24,7 @@ G-buffer Objaverse: High-Quality Rendering Dataset of Objaverse.
 
 ## News
 
-- Release GObjaverse Rendering Dataset (01.06, 2024 UTC)
+- Release G-buffer Objaverse Rendering Dataset (01.06, 2024 UTC)
 - Release 10 Category Annotation of the Objaverse Subset (01.06, 2024 UTC)
 
 ## Download
