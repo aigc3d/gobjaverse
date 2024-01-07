@@ -1,8 +1,8 @@
 <p align="center">
-    <h1>GObjaverse</h1>
+    <h1>G-buffer Objaverse</h1>
 <p>
 
-GObjaverse: High-Quality Rendering Dataset of Objaverse.
+G-buffer Objaverse: High-Quality Rendering Dataset of Objaverse.
 
 [Chao Xu](mailto:eric.xc@alibaba-inc.com),
 [Yuan Dong](mailto:yuandong15@fudan.edu.cn),
